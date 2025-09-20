@@ -2,13 +2,13 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'The BoardRoom Magazine',
-    short_name: 'boardroommagazine',
-    description: 'Latest Energy News, Articles & Insights from the Middle East and Africa',
+    name: 'Arabian Governance & Business Boardroom',
+    short_name: 'arabiangovernance',
+    description: 'Latest Governance News, Articles & Insights from the Middle East and Africa',
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',
-    theme_color: '#1e40af',
+    theme_color: '#9A6C32',
     icons: [
       {
         src: '/logo_final.png',
@@ -21,7 +21,7 @@ export default function manifest(): MetadataRoute.Manifest {
         type: 'image/png',
       },
     ],
-    categories: ['news', 'business', 'finance'],
+    categories: ['news', 'business', 'finance', 'governance'],
     lang: 'en',
     dir: 'ltr',
     orientation: 'portrait',
