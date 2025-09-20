@@ -3,7 +3,7 @@ import { client } from '@/sanity/lib/client'
 import { getAllArticles, getAllInterviews, getAllEvents, getAllPublications, getAllVideos } from '@/sanity/lib/queries'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://financefocusmea.com'
+  const baseUrl = 'https://www.arabiangovernance.com'
 
   // Static pages
   const staticPages = [

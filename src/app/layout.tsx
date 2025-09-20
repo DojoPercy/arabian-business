@@ -26,9 +26,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Energy Nexus - Latest Energy News, Articles & Insights",
-  description: "Stay updated with the latest energy news, articles, interviews, and insights from the energy industry.",
-  metadataBase: new URL('https://energynexus.com'),
+  title: "Arabian Governance & Business Boardroom - Latest Governance News, Articles & Insights",
+  description: "Stay updated with the latest governance news, articles, interviews, and insights from the Arabian region.",
+  metadataBase: new URL('https://www.arabiangovernance.com'),
 };
 
 export default async function RootLayout({
