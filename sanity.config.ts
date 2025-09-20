@@ -1,0 +1,29 @@
+import {defineConfig} from 'sanity'
+import {structureTool} from 'sanity/structure'
+import {presentationTool} from 'sanity/presentation'
+import schemaTypes from './src/sanity/schemas'
+
+export default defineConfig({
+  name: 'default',
+  title: 'Arabian Governance & Business Boardroom',
+
+  projectId: 'v4050nk7',
+  dataset: 'arabian-production',
+  basePath: '/admin',
+  apiVersion: '2024-03-18',
+  plugins: [
+    structureTool(),
+    presentationTool({
+      previewUrl: {
+        origin: process.env.SANITY_STUDIO_PREVIEW_ORIGIN,
+        preview: '/',
+        previewMode: {
+          enable: '/api/draft-mode/enable',
+        },
+      },
+    }),
+  ],
+  schema: {
+    types: schemaTypes,
+  },
+})
